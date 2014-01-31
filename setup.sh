@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-PKG_DIR = ~/packages
+PKG_DIR="~/packages"
 
+echo $PKG_DIR
 
 # install lua 5.2
 # see http://stackoverflow.com/questions/5496003/how-do-i-install-lua-on-macos
@@ -20,7 +21,7 @@ make macosx
 
 cd $PKG_DIR
 git clone git://github.com/andresy/torch.git
-cd torch
+cd $PKG_DIR/torch
 mkdir build
 cd build
 cmake .. 
