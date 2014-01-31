@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-PKG_DIR="~/packages"
+PKG_DIR="/Users/charlesmartin14/packages"
 
-echo $PKG_DIR
 
 # install lua 5.2
 # see http://stackoverflow.com/questions/5496003/how-do-i-install-lua-on-macos
 
 cd $PKG_DIR
+pwd
 wget  http://www.lua.org/ftp/lua-5.2.3.tar.gz
 
 tar xvzf lua-5.2.3.tar.gz
